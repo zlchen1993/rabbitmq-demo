@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql=true: true
+
+
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#com:
+#  neo:
+#    title: \u7EAF\u6D01\u7684\u5FAE\u7B11
+#    description: description=\u5206\u4EAB\u751F\u6D3B\u548C\u6280\u672F
